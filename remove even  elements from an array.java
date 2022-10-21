@@ -9,14 +9,14 @@ class Arrayed {
     public static int[] remeve(int[] arr){
         int oddcnt=0;
         for(int i=0;i<arr.length;i++){
-            if(arr[i] % 2 != 0){
+            if(arr[i] % 2 != 0){                  // for removing odd elements if(arr[i] %2 == 0)
                 oddcnt++;
             }
         }
         int[] result= new int[oddcnt];
         int index=0;
         for(int i=0;i<arr.length;i++){
-            if(arr[i]%2!=0){
+            if(arr[i]%2!=0){                   //for removing odd elements if(arr[i] %2 == 0)
                 result[index]=arr[i];
                 index++;
             }
